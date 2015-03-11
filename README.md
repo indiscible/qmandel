@@ -9,7 +9,7 @@ And I was like, what is this ?
 
 Eventually I figured it out, partially.
 
-I wanted the mandelbrot where you compute the iterations as well.
+But I wanted the mandelbrot where you compute the iterations as well.
 
 Eventually I came up with this:
 
@@ -25,7 +25,7 @@ do [50;
 	c:c+1
 	from `m where n<4 ]
 
-# And I wanted a bitmap too:
+And I wanted a bitmap too:
 
 bmp: { [p; i; s]
  p 1: 0x424d;
