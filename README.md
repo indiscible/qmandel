@@ -12,9 +12,13 @@ But I wanted the mandelbrot where you compute the iterations as well.
 So I came up with this:
 
 m: ( [] 	  
-	 x:s#0f; y:s#0f; n:s#0f; sn:s#0f; c:s#0i; 
+	 
 	 cx: -2.5f + (3.6%w)*(w*s)#til w;
-	 cy: -1.2f + (2.4%h)*raze (w#) each til h )
+	 
+	 cy: -1.2f + (2.4%h)*raze (w#) each til h;
+	 
+	 x:s#0f; y:s#0f; n:s#0f; sn:s#0f; c:s#0i )
+	
 
 do [50;
 	update x:cx+(x*x)-y*y,
