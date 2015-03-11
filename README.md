@@ -1,16 +1,15 @@
 # qmandel
 mandelbrot in kdb+/q
 
-k is awesome
-I started from the mandelbrot one liner from kparc:
+I started from the mandelbrot one liner at http://www.kparc.com/z/comp.k:
 
 +/4>+/b*b:49{c+(-/x*x;2**/x)}/c:-1.5 -1+(2*!2#w)%w:100
 
-And I was like, wouah.
+And I was like, what is this ?
 
-Anyway eventually I figured it out, partially.
+Eventually I figured it out, partially.
 
-But I wanted color a mandelbrot like you see in books.
+I wanted the mandelbrot where you compute the iterations as well.
 
 Eventually I came up with this:
 
@@ -26,8 +25,7 @@ do [50;
 	c:c+1
 	from `m where n<4 ]
 
-
-And I wanted a picture too!
+# And I wanted a bitmap too:
 
 bmp: { [p; i; s]
  p 1: 0x424d;
@@ -35,7 +33,6 @@ bmp: { [p; i; s]
   (54+4*(*/)s),0,54,40,s,(1+65536*32),0,0,1,1,0,0) 
    i 
  }
-
 bmp [ `:red.bmp; "e"$m.c; s ]
 
 et voila
