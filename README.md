@@ -13,7 +13,7 @@ So I came up with this:
 
 m: ( [] 	  
 	 
-	 cx: -2.5f + (3.6%w)*(w*s)#til w;
+	 cx: -2.5f + (3.6%w)*(w*h)#til w;
 	 
 	 cy: -1.2f + (2.4%h)*raze (w#) each til h;
 	 
