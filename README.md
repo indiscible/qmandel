@@ -5,13 +5,11 @@ I started from the mandelbrot one liner at http://www.kparc.com/z/comp.k:
 
 +/4>+/b*b:49{c+(-/x*x;2**/x)}/c:-1.5 -1+(2*!2#w)%w:100
 
-And I was like, what is this ?
-
 Eventually I figured it out, partially.
 
 But I wanted the mandelbrot where you compute the iterations as well.
 
-Eventually I came up with this:
+So I came up with this:
 
 m: ( [] 	  
 	 x:s#0f; y:s#0f; n:s#0f; sn:s#0f; c:s#0i; 
